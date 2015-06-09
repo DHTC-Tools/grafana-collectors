@@ -1,0 +1,5 @@
+# Collect data for graphite and grafana
+*/1  * * * * root /usr/local/collect/collect.sh pilots >>/var/log/collect/collect-pilots.log 2>&1
+*/1  * * * * root /usr/local/collect/collect.sh condor >>/var/log/collect/collect-condor.log 2>&1
+#*/1  * * * * root /usr/local/collect/collect.sh ddlesny >>/var/log/collect/collect-ddlesny.log 2>&1
+*/30 * * * * root /usr/local/collect/collect.sh panda  >>/var/log/collect/collect-panda.log  2>&1
